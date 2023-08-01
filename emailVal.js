@@ -56,10 +56,10 @@ function sendEmail(name, email) {
 
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "19202103403@cse.bubt.edu.bd",
-        Password : "ntgwuuouwihgqvxj",
+        Username : process.env.GMAIL,
+        Password : process.env.PASS,
         To : email,
-        From : "19202103403@cse.bubt.edu.bd",
+        From : process.env.GMAIL,
         Subject : `${name}, your Registration was successful!`,
         Body : "Thank you for your participation. You are more than welcome!"
     }).then(
