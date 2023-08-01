@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ASH AND OTHERS</title>
+    <link rel='icon' href="./img/ult-logo.png"/>
+    <script src="message.js"></script>
+    <script src="emailVal.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="social">
+        <span><i class="fa fa-dot-circle circle"></i></span>
+        <a href="https://www.youtube.com"><i class='fa fa-envelope email'></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook facebook"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-youtube-play youtube"></i></a>
+        <span href="index.html"><i class="fa fa-dot-circle circle"></i></span>
+    </div>
+    <nav class="nav">
+        <div class="logo"></div>
+        <ul class="listNav">
+            <li class="listElement"> <a href="index.html"><b>Home</b></a></li>
+            <li class="listElement listElementActive"> <a href="tickets.html"><b>Tickets</b></a> </li>
+            <li class="listElement"><a href="about.html"><b>About</b></a></li>
+        </ul>
+    </nav>
+    <header class="banner">
+        <h2 class="slogan">
+            W e &ensp; H a v e &ensp; W h a t  &ensp; Y o u &ensp; N e e d
+        </h2>
+        <h1 class="title">
+            ASH AND OTHERS
+        </h1>
+        <div class="subtitle">
+            <p><strong>Entry fees: <b><i>250 tk</i></b></strong><br>All we need is now your good intention, make it fast guys<br>
+            Hurry up!</p>
+        </div>
+        <div class="bookTicket">
+            <p>Book your ticket now!</p>
+        </div>
+    </header>
+    <div class="titleContributors "> <a href=""><h4 class="underline-green">Book Ticket</h4></a>  </div>
+    <main class="ticketReg">
+        <div class="regForm">
+            <div class="wrapper">
+                <h2>Registration</h2>
+                <form name= "myForm" action="config.php" id="my-form" method = "POST">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your Name" required name="Uname">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Umail" placeholder="Enter your Email" required >
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your Phone number" required name="Uphn">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Your Address" required name="Uadd">
+                    </div>
+                    <div class="policy">
+<!--                        <input type="checkbox">-->
+<!--                        <h3>I accept all terms & condition</h3>-->
+<!--                    </div>-->
+                    <div class="input-box button">
+                        <input type="Submit" value="Book Now" onclick="return regValid()" >
+                    </div>
+                    <div id="status">
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="footerBanner">
+        <div class="partnerFooter"> <a href=""><h4 class="underline-green">Sponsored by</h4></a> </div>
+        <div class="listPartnerFooter">
+            <img class="sponsorIcon" src="./img/1-filled.png" alt="">
+            <img class="sponsorIcon" src="./img/2-filled.png" alt="">
+            <img class="sponsorIcon" src="./img/3-filled.png" alt="">
+            <img class="sponsorIcon" src="./img/4-filled.png" alt="">
+            <img class="myIcon" src="./img/SASH%20white%20Icom.png" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="logoFooter"></div>
+        <div class="rightsFooter"><p>2022</p> <p>Some Rights Reserved</p> <p></p></div>
+        <div class="myLogo"></div>
+    </footer>
+</div>
+</body>
+</html>
